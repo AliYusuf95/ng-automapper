@@ -4,6 +4,8 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
 import { BaseComponent } from './base/base.component';
+import {Comp1Module} from './pages/comp1/comp1.module';
+import {Comp2Module} from './pages/comp2/comp2.module';
 
 @NgModule({
   declarations: [
