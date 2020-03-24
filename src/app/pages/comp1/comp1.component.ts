@@ -1,13 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import {BaseModel} from '../../models/base.model';
-import {Class1Model} from '../../models/class1.model';
-import {Class2Model} from '../../models/class2.model';
-import {Class3Model} from '../../models/class3.model';
+import {Component, OnInit} from '@angular/core';
 import {Mapper} from '@nartc/automapper';
-import {BaseDto} from '../../dto/base.dto';
-import {Class1Dto} from '../../dto/class1.dto';
-import {Class2Dto} from '../../dto/class2.dto';
-import {Class3Dto} from '../../dto/class3.dto';
+import {UserDto} from '../../dto/user.dto';
+import {UserModel} from '../../models/user.model';
 
 @Component({
   selector: 'app-comp1',
@@ -16,22 +10,28 @@ import {Class3Dto} from '../../dto/class3.dto';
 })
 export class Comp1Component implements OnInit {
 
-  constructor() { }
+  user;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
 
-    const model: BaseModel | Class1Model | Class2Model | Class3Model = {
+    const dto: UserDto = {
       id: '2',
+      name: 'user name',
+      age: 15,
       createdAt: new Date(),
       updatedAt: new Date(),
+      profile: {
+        logoUrl: '',
+        updatedAt: new Date(),
+      }
     };
 
-    const base = Mapper.map(model, BaseModel, BaseDto);
-    const class1 = Mapper.map(model, Class1Model, Class1Dto);
-    const class2 = Mapper.map(model, Class2Model, Class2Dto);
-    const class3 = Mapper.map(model, Class3Model, Class3Dto);
+    this.user = Mapper.map(dto, UserModel, UserDto);
 
-    console.log(base, class1, class2, class3);
+    console.log(this.user);
   }
 
 }

@@ -1,11 +1,10 @@
-import {BaseModel} from './base.model';
-import {AutoMap, Mapper} from '@nartc/automapper';
-import {BaseDto} from '../dto/base.dto';
+import {Mapper} from '@nartc/automapper';
 import {ProfileDto} from '../dto/profile.dto';
+import {BaseProfileModel} from './base-profile.model';
+import {BaseProfileDto} from '../dto/base-profile.dto';
 
-export class ProfileModel extends BaseModel {
-  @AutoMap()
-  logo: object;
+export class ProfileModel extends BaseProfileModel {
+  temp?: any;
 }
 
-Mapper.createMap(ProfileDto, ProfileModel, {includeBase: [BaseDto, BaseModel]});
+Mapper.createMap(ProfileDto, ProfileModel, {includeBase: [BaseProfileDto, BaseProfileModel]});

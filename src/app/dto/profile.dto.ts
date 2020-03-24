@@ -1,7 +1,5 @@
-import {BaseDto} from './base.dto';
-import {AutoMap} from '@nartc/automapper';
+import {BaseProfileDto} from './base-profile.dto';
 
-export class ProfileDto extends BaseDto {
-  @AutoMap()
-  logo: object;
+export class ProfileDto extends BaseProfileDto {
+  temp?: any;
 }
