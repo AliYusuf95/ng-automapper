@@ -900,10 +900,10 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@nartc/automapper@^5.0.13":
-  version "5.0.13"
-  resolved "https://registry.yarnpkg.com/@nartc/automapper/-/automapper-5.0.13.tgz#99e3a83f57a94e9dfb60f4856897228ac7d3c82a"
-  integrity sha512-vZj/UDZOI1ZXaDi2fjjJHZ/iZJWGvNmP3e6yojv5tHVOr3v00XW7Z8mxDmUAk47mvk/kvw6lnLqMKYfbktaJEw==
+"@nartc/automapper@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@nartc/automapper/-/automapper-6.0.2.tgz#88ac12230cc1e2f5c41cbe2fa2acd74f6c6896a6"
+  integrity sha512-kU8ewE+C4nEjF+FyoEEeNLZ3ftC55I/Hcnyormbu4qqjuu63ZVLrTEvKmc/WDvhlaQ9KZ3hb8x9KZTlPx+YP/A==
   dependencies:
     lodash.set "4.3.2"
 

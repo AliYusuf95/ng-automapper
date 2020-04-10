@@ -1,4 +1,4 @@
-import {AutoMap, AutoMapper, Mapper, MappingProfileBase} from '@nartc/automapper';
+import {AutoMap, AutoMapper, Mapper, ProfileBase} from '@nartc/automapper';
 import {Class1Dto} from '../dto/class1.dto';
 
 export class Class1Model {
@@ -10,7 +10,7 @@ export class Class1Model {
   updatedAt: Date;
 }
 
-class Class1Profile extends MappingProfileBase {
+class Class1Profile extends ProfileBase {
   constructor(mapper: AutoMapper) {
     super();
     mapper.createMap(Class1Dto, Class1Model);
