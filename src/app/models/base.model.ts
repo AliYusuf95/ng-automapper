@@ -11,10 +11,11 @@ export class BaseModel {
 }
 
 class BaseProfile extends ProfileBase {
+  profileName = 'BaseProfile';
   constructor(mapper: AutoMapper) {
     super();
     mapper.createMap(BaseDto, BaseModel);
   }
 }
-
+console.log('BaseProfile');
 Mapper.addProfile(BaseProfile);
