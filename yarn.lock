@@ -1051,10 +1051,10 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.6.4"
 
-"@nartc/automapper@^6.3.9":
-  version "6.3.9"
-  resolved "https://registry.yarnpkg.com/@nartc/automapper/-/automapper-6.3.9.tgz#826b64fef50c0c2bb3c07f8d908631951a680285"
-  integrity sha512-MehtHRa7jrHiTKWiaIuJfYwv4GEmx0FoXISL5JWJbRyscfDuqNqkXS4y5F9PspexxoZvB04GwF43UjrJVYZOcA==
+"@nartc/automapper@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@nartc/automapper/-/automapper-7.0.2.tgz#84474b42c7402bcd738cdd0f8523c41de798f8fb"
+  integrity sha512-RLPpSMBxgrrAvPWtIKV1YK4IUbovRDvY/HksyNFA1M6qcFGnfgalaR7R3j5yegXPWiUeAvpvNcq6aTL3WhyQww==
   dependencies:
     lodash.set "4.3.2"
 
